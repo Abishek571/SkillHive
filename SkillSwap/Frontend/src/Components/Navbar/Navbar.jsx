@@ -20,7 +20,7 @@ const UserProfileDropdown = () => {
     setUser(null);
     try {
       const response = await axios.get("/auth/logout");
-      window.location.href = "skillhive-murex.vercel.app/login";
+      window.location.href = "http://skillhive-murex.vercel.app/login";
     } catch (error) {
       console.log(error);
       if (error?.response?.data?.message) {
